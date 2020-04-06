@@ -14,7 +14,11 @@ h6 {
 h1 {
   font-size: 23px;
   font-weight: 700;
-  line-height: 30px;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 700;
 }
 
 main {
@@ -69,6 +73,8 @@ nav a:hover {
 }
 .about {
   width: 60%;
+  z-index: 1;
+  width: 80%;
 }
 .about p {
   margin-top: 36px;
@@ -181,6 +187,7 @@ ul {
 .contact {
   margin-top: 150px;
   padding-bottom: 100px;
+  display: block;
 }
 
 .contact h1 {
@@ -233,11 +240,6 @@ input:checked ~ .tab-content {
     position: absolute;
     top: 100px;
     width: 60%;
-  }
-
-  .about {
-    z-index: 1;
-    width: 80%;
   }
 
   .buttons {
