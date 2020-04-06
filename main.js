@@ -10,13 +10,12 @@ function get3words() {
   const check = a | (b * 13) | (c * 37); // just two random-ish primes :)
   const last_3bits = check % 2 ** checksum_bits;
   return (
-    bip39words[a] +
-    " " +
-    bip39words[b] +
-    " " +
-    bip39words[c * 2 ** checksum_bits + last_3bits]
-  );
+    capitalizeFirstLetter(bip39words[a]) +
+    capitalizeFirstLetter(bip39words[b]) +
+    capitalizeFirstLetter(bip39words[c * 2 ** checksum_bits + last_3bits]));
 }
+
+const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
 window.onload = () => {
   const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeDAggwyFWORIdobSCs3cDPZiycNTL1Wc8fWaDY1pWCDXqT4w/viewform?entry.1420904060="
@@ -32,11 +31,5 @@ window.onload = () => {
     open(uniqueUrl);
   }
 
-  const threeChars = () => {
-    var n = (Math.random() * 46656) | 0;
-    return ("000" + n.toString(36)).slice(-3);
-  }
-
-  // 6-character alphanumeric sequence
   const generateUID = () => get3words();
 }
