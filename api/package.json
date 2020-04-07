@@ -1,0 +1,13 @@
+{
+  "name": "@cocheck/api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "'If the frontend is rewritten, this code should not change'",
+  "main": "./src/index.js",
+  "dependencies": {
+    "crypto-js": "4"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

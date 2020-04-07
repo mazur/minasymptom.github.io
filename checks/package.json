@@ -1,0 +1,8 @@
+{
+  "name": "@cocheck/checks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "'If someone wants to parse a data dump, they should need ONLY this package'",
+  "main": "./src/index.js",
+  "dependencies": {}
+}

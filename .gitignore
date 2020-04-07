@@ -1,0 +1,12 @@
+node_modules
+build
+.tern-port
+.DS_Store
+package-lock.json
+yarn-error.log
+\.firebase/
+.idea
+.yarn
+.yarnrc.yml
+firebase-debug.log
+firestore-debug.log
