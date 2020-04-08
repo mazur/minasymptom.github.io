@@ -23,6 +23,9 @@
     "typescript": "3",
     "react-test-renderer": "16"
   },
+  "scripts": {
+    "build": "yarn && (cd client && yarn build)"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && eslint  --max-warnings 0 ."
