@@ -26,7 +26,6 @@ jobs:
       - name: Install and Test
         run: |
           yarn
-          yarn test
         env:
           CI: true
 
