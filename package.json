@@ -24,6 +24,7 @@
     "react-test-renderer": "16"
   },
   "scripts": {
+    "start": "yarn && (cd client && yarn start)",
     "build": "yarn && (cd client && yarn build)"
   },
   "husky": {
@@ -34,6 +35,6 @@
   "workspaces": [
     "client",
     "api",
-    "checks"
+    "questions"
   ]
 }
